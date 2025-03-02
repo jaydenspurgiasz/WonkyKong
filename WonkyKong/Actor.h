@@ -49,6 +49,67 @@ private:
 	int burps;
 	int lives;
 	int jumpSeq;
+	int jumpDir;
 };
+
+class Ladder : public Actor {
+public:
+	Ladder(int startX, int startY);
+	void doSomething();
+};
+
+
+class Kong : public Actor {
+public:
+	Kong(int startX, int startY, int dir);
+	void doSomething();
+};
+
+class Barrel : public Actor {
+public:
+	Barrel(int startX, int startY);
+	void doSomething();
+};
+
+class Fireball : public Actor {
+public:
+	Fireball(int startX, int startY);
+	void doSomething();
+};
+
+class Koopa : public Actor {
+public:
+	Koopa(int startX, int startY);
+	void doSomething();
+};
+
+class Bonfire : public Actor {
+public:
+	Bonfire(int startX, int startY);
+	void doSomething();
+};
+
+class ExtraLifeGoodie : public Actor {
+public:
+	ExtraLifeGoodie(int startX, int startY);
+	void doSomething();
+};
+
+class GarlicGoodie : public Actor {
+public:
+	GarlicGoodie(int startX, int startY);
+	void doSomething();
+};
+
+class Burp : public Actor {
+public:
+	Burp(int startX, int startY);
+	void doSomething();
+};
+
+// Classes needed: Kong, Barrels, Fireballs, Koopas, Bonfire, Ladders, Extra Life Goodies, Garlic Goodies, Burps(from Player)
+
+
+
 
 #endif // ACTOR_H_

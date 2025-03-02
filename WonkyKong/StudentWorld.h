@@ -27,6 +27,7 @@ private:
 	Player* player;
 	Level* curLvl;
 	int playerScore;
+	void setDisplayText();
 };
 
 #endif // STUDENTWORLD_H_
