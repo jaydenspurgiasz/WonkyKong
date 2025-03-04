@@ -20,14 +20,20 @@ public:
   virtual int init();
   virtual int move();
   virtual void cleanUp();
-  Level* getLevel() const;
+  Level* getCurLevel() const;
+  Player* getPlayer() const;
+  void kongFlee();
+  void addActor(Actor* newAc);
+  void attackAll(int x, int y);
+  void burpAll(int x, int y);
   ~StudentWorld();
 private:
 	std::list<Actor*> actorList;
 	Player* player;
 	Level* curLvl;
-	int playerScore;
 	void setDisplayText();
+	void removeDeadActors();
+	bool curLvlFinished;
 };
 
 #endif // STUDENTWORLD_H_
